@@ -7,7 +7,7 @@
     <Authors>Warren</Authors>
     <Company>ImageResizer</Company>
     <Product />
-    <ApplicationIcon>minimize_arrows_2Nq_icon.ico</ApplicationIcon>
+    <ApplicationIcon>Resources\minimize_arrows.ico</ApplicationIcon>
   </PropertyGroup>
 
   <ItemGroup>
