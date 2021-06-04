@@ -17,11 +17,16 @@ namespace ImageResizer
 {
     public partial class Form1 : Form
     {
+        // default 
+        private static int width = 1024;
+        private static int height = 768;
+
         public Form1()
         {
             InitializeComponent();
             progressBar1.Value = 0;
             InitializeBackgroundWorker();
+            comboBox1.SelectedIndex = 0;
         }
 
         private void InitializeBackgroundWorker()
@@ -60,8 +65,8 @@ namespace ImageResizer
         }
         public static Bitmap resizeImage(Image image)
         {
-            var destRect = new Rectangle(0, 0, 1024, 768);
-            var destImage = new Bitmap(1024, 768);
+            var destRect = new Rectangle(0, 0, width, height);
+            var destImage = new Bitmap(width, height);
 
             destImage.SetResolution(image.HorizontalResolution, image.VerticalResolution);
 
@@ -150,6 +155,13 @@ namespace ImageResizer
                 progressBar1.Value = 100;
                 btnSubmit.Enabled = true;
             }
+        }
+
+        private void comboBox1_SelectedIndexChanged(object sender, EventArgs e)
+        {
+            string[] res = comboBox1.SelectedItem.ToString().Split("x");
+            width = Int32.Parse(res[0]);
+            height = Int32.Parse(res[1]);
         }
     }
 }

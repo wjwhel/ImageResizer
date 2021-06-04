@@ -8,6 +8,7 @@
     <Company>ImageResizer</Company>
     <Product />
     <ApplicationIcon>Resources\minimize_arrows.ico</ApplicationIcon>
+    <StartupObject>ImageResizer.Program</StartupObject>
   </PropertyGroup>
 
   <ItemGroup>
