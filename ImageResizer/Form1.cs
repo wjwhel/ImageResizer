@@ -43,6 +43,7 @@ namespace ImageResizer
         {
             btnSubmit.Enabled = false;
             status.Visible = true;
+            status.Text = "Resizing... ";
 
             string[] parentDir = Directory.GetDirectories(Properties.Settings.Default.InputFolder);
 
