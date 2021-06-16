@@ -48,7 +48,7 @@ namespace ImageResizer
             this.btnSubmit.Name = "btnSubmit";
             this.btnSubmit.Size = new System.Drawing.Size(119, 31);
             this.btnSubmit.TabIndex = 1;
-            this.btnSubmit.Text = "Reisze";
+            this.btnSubmit.Text = "Resize";
             this.btnSubmit.UseVisualStyleBackColor = true;
             this.btnSubmit.Click += new System.EventHandler(this.btnSubmit_Click);
             // 
